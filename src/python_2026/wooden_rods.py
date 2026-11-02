@@ -12,3 +12,4 @@ def get_random_rods(n_elems) -> list[int]:
 
 if __name__ == '__main__':
     # zadanie - sprawdzic czy z wylosowanej listy mozna stworzyc pret dlugosic 50
+    ...
