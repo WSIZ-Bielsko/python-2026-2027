@@ -26,11 +26,17 @@ if __name__ == '__main__':
     roberta = User('Roberta Metsola', 47, '@robert.metsola')
     kaja = User('Kaja Kallas', 49, '@kajakallas')
 
-    users = [ursula, antonio, roberta, kaja]
-    write_users_to_json('users.json', users)
+    european_users = [ursula, antonio, roberta, kaja]
+    write_users_to_json('users.json', european_users)
     new_users = read_users_from_json('users.json')
     print(new_users)
 
 
-    germans = read_users_from_json('german_leaders.json')
-    print(germans)
+    german_leaders = read_users_from_json('german_leaders.json')
+    print(german_leaders)
+    sorted_german_leaders = sorted(german_leaders, key=lambda user: user.name)
+    print(sorted_german_leaders)
+
+
+
+
